@@ -113,6 +113,10 @@ footer {
 	
 }
 
+.author-notes {
+	color: lighten(black, 50%)
+}
+
 button#dark-toggle {
 	width: 4rem;
 	height: 4rem;
@@ -155,6 +159,10 @@ body.dark {
 	button#dark-toggle {
 		background-color: white;
 		color: $dark-neutral
+	}
+
+	.author-notes {
+		color: darken(white, 50%)
 	}
 
 }
