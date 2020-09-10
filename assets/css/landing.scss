@@ -1,8 +1,11 @@
 ---
 ---
+
+@import "variables";
+
 #intro {
 	padding: 20px;
-	background-color: #ff7b26;
+	background-color: $scratch-orange;
 	color: white;
 	text-align: center;
 	
@@ -38,7 +41,7 @@
 		height: 9rem;
 		width: 9rem;
 		margin: auto;
-		background: #ff7b26;
+		background: $scratch-orange;
 		color: white;
 		border-radius: 50%;
 	}
@@ -57,7 +60,7 @@
 }
 
 main {
-	margin: 0
+	padding: 0
 }
 
 main section {
@@ -75,4 +78,20 @@ h2 {
 	height: 200px;
 	width: 200px;
 	border: 2px black dashed
+}
+
+body.dark {
+
+	#intro {
+		background-color: lighten($dark-neutral, 7%);
+	}
+
+	#features {
+
+		.features-circle {
+			background-color: lighten($dark-neutral, 5%);
+		}
+
+	}
+
 }
