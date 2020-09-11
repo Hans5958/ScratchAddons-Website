@@ -37,12 +37,18 @@
 	}
 	
 	.features-circle {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: -moz-box;
 		display: flex;
 		height: 9rem;
 		width: 9rem;
 		margin: auto;
 		background: $scratch-orange;
 		color: white;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
 		border-radius: 50%;
 	}
 
