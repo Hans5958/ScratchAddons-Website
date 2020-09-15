@@ -23,9 +23,12 @@ if (localStorage.getItem("darkTheme")) {
 		update()
 	}
 } else {
-	if (window.matchMedia("(prefers-color-scheme: dark)")) {
-		update()
-	}
+	// if (window.matchMedia("(prefers-color-scheme: dark)")) {
+	// 	update()
+	// } else {
+	// 	localStorage.setItem("darkTheme", false)
+	// }
+	localStorage.setItem("darkTheme", false)
 }	
 
 toggle.addEventListener("click", () => {
